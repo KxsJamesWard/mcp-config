@@ -1,0 +1,20 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Playwright MCP Server",
+    "version": "0.0.52",
+    "description": "Metadata for Playwright MCP server (local stdio, not HTTP). This spec is for cataloging and governance only."
+  },
+  "x-mcp-local-configuration": {
+    "name": "playwright",
+    "command": "npx",
+    "args": ["@playwright/mcp@0.0.52"],
+    "installLink": "vscode:mcp/install?{\"name\":\"playwright\",\"command\":\"npx\",\"args\":[\"@playwright/mcp@0.0.52\"]}",
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "version": "0.0.52"
+  },
+  "paths": {},
+  "components": {}
+}

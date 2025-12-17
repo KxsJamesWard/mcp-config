@@ -1,0 +1,38 @@
+{
+  "apiVersion": "mcp-registry/v1",
+  "kind": "MCPServerDefinition",
+  "metadata": {
+    "name": "playwright-mcp",
+    "version": "0.0.52",
+    "type": "local-stdio"
+  },
+  "spec": {
+    "displayName": "Playwright MCP Server",
+    "description": "Local stdio MCP server for Playwright automation",
+    "governance": {
+      "approvalStatus": "approved",
+      "approver": "security-team@kinaxis.com",
+      "reviewDate": "2025-12-01"
+    },
+    "discovery": {
+      "openApiUrl": "https://raw.githubusercontent.com/KxsJamesWard/mcp-config/main/openapi.json",
+      "documentation": "https://wiki.kinaxis.com/mcp/playwright"
+    },
+    "localConfiguration": {
+      "name": "playwright",
+      "command": "npx",
+      "args": ["@playwright/mcp@0.0.52"],
+      "installLink": "vscode:mcp/install?{\"name\":\"playwright\",\"command\":\"npx\",\"args\":[\"@playwright/mcp@0.0.52\"]}",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "version": "0.0.52",
+      "security": {
+        "allowFileAccess": false,
+        "allowNetworkAccess": false,
+        "restrictedDomains": [],
+        "allowedDomains": ["*"]
+      }
+    }
+  }
+}
