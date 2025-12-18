@@ -9,7 +9,6 @@
     "name": "playwright",
     "command": "npx",
     "args": ["@playwright/mcp@0.0.52"],
-    "installLink": "vscode:mcp/install?{\"name\":\"playwright\",\"command\":\"npx\",\"args\":[\"@playwright/mcp@0.0.52\"]}",
     "env": {
       "NODE_ENV": "production"
     },
